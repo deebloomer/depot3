@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
-Product.create(title: 'CoffeeScript',
+Product.create(title: 'CoffeeScriptGOOD MORNING PAUL 13.12.12',
                description:
                    %{<p>
         CoffeeScript is JavaScript done right. It provides all of JavaScript's
