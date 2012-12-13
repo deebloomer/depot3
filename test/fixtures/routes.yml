@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  outbound_code: MyString
+  inbound_code: MyString
+  return_route: false
+  start: MyString
+  finish: MyString
+
+two:
+  outbound_code: MyString
+  inbound_code: MyString
+  return_route: false
+  start: MyString
+  finish: MyString
