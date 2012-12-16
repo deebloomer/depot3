@@ -11,8 +11,8 @@ class OnlineStoreControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get search" do
-    get :search
+  test "should get search_results" do
+    get :search_results
     assert_response :success
   end
 
