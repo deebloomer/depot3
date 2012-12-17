@@ -18,16 +18,16 @@
 <!--<%#= render :partial => "cart" %>  dee-->
 
 
-<!--<div id="search-box"> Dans suggestion cant get it to work-->
-<%#= form_tag :url => online_store_search_url do %>  <!-- dee tried OnlineStoreController-->
-<%#= label_tag :search_for_this, "Search" %>
-<%#= text_field_tag :search_for_this %>
-<%#= submit_tag "Go" %>
-<%# end %>
+<div id="search-box">
+  <%= form_tag(search_request_url, :method => :post) do %> <!-- dee tried OnlineStoreController-->
+<%= label_tag :search_for_this, "Search" %>
+<%= text_field_tag :search_for_this %>
+<%= submit_tag "Go" %>
+<% end %>
 
 
 
-<!--</div>-->
+</div>
 
 <div id="columns">
   <div id="side">

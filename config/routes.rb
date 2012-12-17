@@ -27,11 +27,10 @@ Depot::Application.routes.draw do
   resources :carts
 
   get "store/index"
-=begin
-  get "online_store/index"
-  get "online_store/show"
-  post "online_store/search_results"           #dee changed from post and back again made no difference
-=end
+  match "search_request" => "online_store#search_results", :as => :search_request, :method => :post
+
+    get "online_store/index"
+    get "online_store/show"
 
   resources :products do
     get :who_bought, on: :member

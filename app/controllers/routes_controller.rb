@@ -2,7 +2,7 @@ class RoutesController < ApplicationController
   # GET /routes
   # GET /routes.json
   def index
-    @routes = Route.search(params[:search_query])
+    @routes = Route.all
 
 
 
