@@ -27,9 +27,11 @@ Depot::Application.routes.draw do
   resources :carts
 
   get "store/index"
+=begin
   get "online_store/index"
   get "online_store/show"
-  post "online_store/search_results"
+  post "online_store/search_results"           #dee changed from post and back again made no difference
+=end
 
   resources :products do
     get :who_bought, on: :member
@@ -84,8 +86,8 @@ Depot::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  #root :to => 'store#index', as: 'store'
-  root :to => 'online_store#index'
+  root :to => 'store#index'#, as: 'store'
+  #root :to => 'online_store#index'
 
   # See how all your routes lay out with "rake routes"
 

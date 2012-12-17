@@ -12,16 +12,22 @@
 <div id="banner">
   <%= image_tag("logo.png") %>
   <%= @page_title || "Pragmatic Bookshelf" %>
-</div>
-
-<div id="search-box">
-  <%= form_tag :url => online_store_search_url do %>
-  <%= label_tag :search_for_this, "Search" %>
-  <%= text_field_tag :search_for_this %>
-  <%= submit_tag "Go" %>
-  <% end %>  <!-- rubymine:"unexpected end"   -->
 
 </div>
+
+<!--<%#= render :partial => "cart" %>  dee-->
+
+
+<!--<div id="search-box"> Dans suggestion cant get it to work-->
+<%#= form_tag :url => online_store_search_url do %>  <!-- dee tried OnlineStoreController-->
+<%#= label_tag :search_for_this, "Search" %>
+<%#= text_field_tag :search_for_this %>
+<%#= submit_tag "Go" %>
+<%# end %>
+
+
+
+<!--</div>-->
 
 <div id="columns">
   <div id="side">
