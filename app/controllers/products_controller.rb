@@ -3,7 +3,11 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+<<<<<<< HEAD
     @cart = current_cart
+=======
+
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }

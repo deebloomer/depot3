@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 body { background-color: #87ceeb; color: #333; }
 
 body, p, ol, ul, td {
   font-family: helvetica, verdana, arial, sans-serif;
+=======
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
   font-size:   13px;
   line-height: 18px;
 }
@@ -54,6 +61,9 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+<<<<<<< HEAD
 li {
     list-style: none;
 }
+=======
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd

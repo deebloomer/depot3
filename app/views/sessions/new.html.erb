@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div class="depot_form" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+=======
+<div class="depot_form">
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
   <% if flash[:alert] %>
       <p id="notice"><%= flash[:alert] %></p>
   <% end %>
@@ -7,6 +11,7 @@
         <legend>Please Log In</legend>
 
         <div>
+<<<<<<< HEAD
           <ul>
           <li><%= label_tag :name, 'Name:' %></li>
           <%= text_field_tag :name, params[:name] %>
@@ -17,6 +22,14 @@
           <li><%= label_tag :password, 'Password:' %></li>
           <%= password_field_tag :password, params[:password] %>
           </ul>
+=======
+          <%= label_tag :name, 'Name:' %>
+          <%= text_field_tag :name, params[:name] %>
+        </div>
+        <div>
+          <%= label_tag :password, 'Password:' %>
+          <%= password_field_tag :password, params[:password] %>
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
         </div>
         <div>
           <%= submit_tag "Login" %>

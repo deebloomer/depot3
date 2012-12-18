@@ -1,2 +1,35 @@
+<<<<<<< HEAD
 <h1>Routes#show</h1>
 <p>Find me in app/views/routes/show.html.erb</p>
+=======
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Outbound code:</b>
+  <%= @route.outbound_code %>
+</p>
+
+<p>
+  <b>Inbound code:</b>
+  <%= @route.inbound_code %>
+</p>
+
+<p>
+  <b>Return route:</b>
+  <%= @route.return_route %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @route.start %>
+</p>
+
+<p>
+  <b>Finish:</b>
+  <%= @route.finish %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd

@@ -1,8 +1,21 @@
 Depot::Application.routes.draw do
+<<<<<<< HEAD
 
   get "routes/index"
 
   get "routes/show"
+=======
+  resources :tickets
+
+  resources :ticket_prices
+
+  resources :route_schedules
+
+  resources :route_details
+
+  resources :routes
+
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   get 'admin' => 'admin#index'
 
@@ -12,8 +25,11 @@ Depot::Application.routes.draw do
     delete 'logout' => :destroy
   end
 
+<<<<<<< HEAD
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
+=======
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
   resources :users
 
   resources :orders
@@ -22,9 +38,17 @@ Depot::Application.routes.draw do
 
   resources :carts
 
+<<<<<<< HEAD
   resources :routes
 
   get "store/index"
+=======
+  get "store/index"
+  match "search_request" => "online_store#search_results", :as => :search_request, :method => :post
+
+    get "online_store/index"
+    get "online_store/show"
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   resources :products do
     get :who_bought, on: :member
@@ -79,7 +103,12 @@ Depot::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+<<<<<<< HEAD
   root :to => 'store#index', as: 'store'
+=======
+  root :to => 'store#index'#, as: 'store'
+  #root :to => 'online_store#index'
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   # See how all your routes lay out with "rake routes"
 

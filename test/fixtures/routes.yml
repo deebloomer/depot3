@@ -1,7 +1,22 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+<<<<<<< HEAD
   title: MyString
 
 two:
   title: MyString
+=======
+  outbound_code: MyString
+  inbound_code: MyString
+  return_route: false
+  start: MyString
+  finish: MyString
+
+two:
+  outbound_code: MyString
+  inbound_code: MyString
+  return_route: false
+  start: MyString
+  finish: MyString
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd

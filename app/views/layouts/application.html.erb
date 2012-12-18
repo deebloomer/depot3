@@ -11,6 +11,7 @@
 <body class="<%= controller.controller_name %>">
 <div id="banner">
   <%= image_tag("logo.png") %>
+<<<<<<< HEAD
   <%= @page_title || "Bus Routes" %>
 </div>
 <div id="columns">
@@ -38,6 +39,46 @@
       <li><a href="http://www..../contact">About Us</a></li>
       <li><a href="http://www..../contact">Contact Us</a></li>
       <li><a href="http://www..../contact">Mobile View</a></li>
+=======
+  <%= @page_title || "Pragmatic Bookshelf" %>
+
+</div>
+
+<!--<%#= render :partial => "cart" %>  dee-->
+
+
+<div id="search-box">
+  <%= form_tag(search_request_url, :method => :post) do %> <!-- dee tried OnlineStoreController-->
+<%= label_tag :search_for_this, "Search" %>
+<%= text_field_tag :search_for_this %>
+<%= submit_tag "Go" %>
+<% end %>
+
+
+
+</div>
+
+<div id="columns">
+  <div id="side">
+    <!-- START_HIGHLIGHT -->
+    <!-- START:hidden_div -->
+    <% if @cart %>
+        <%=hidden_div_if(@cart.line_items.empty?, id: 'cart') do  %>
+
+        <%= render @cart %>
+    <% end %>
+    <% end %>
+    <!-- END:hidden_div -->
+
+    <!-- END_HIGHLIGHT -->
+
+    <ul>
+      <li><a href="http://www....">Home</a></li>
+      <li><%= link_to 'Routes',   routes_path   %></li>
+     <li><a href="http://www..../faq">Questions</a></li>
+      <li><a href="http://www..../news">News</a></li>
+      <li><a href="http://www..../contact">Contact</a></li>
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
     </ul>
     <!-- START_HIGHLIGHT -->
 

@@ -46,7 +46,11 @@ Depot::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+<<<<<<< HEAD
   # config.assets.precompile += %w( search.js )
+=======
+  # config.assets.precompile += %w( search_results.js )
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

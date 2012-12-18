@@ -1,6 +1,9 @@
 class Product < ActiveRecord::Base
   has_many :line_items
+<<<<<<< HEAD
   belongs_to :routes
+=======
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   before_destroy :ensure_not_referenced_by_any_line_item
 
@@ -15,7 +18,11 @@ class Product < ActiveRecord::Base
       with:    %r{\.(gif|jpg|png)\Z}i,
       message: 'must be a URL for GIF, JPG or PNG image.'
   }
+<<<<<<< HEAD
   validates :title, length: {minimum: 10}
+=======
+  validates :title, length: {minimum: 4}
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 
   private
 

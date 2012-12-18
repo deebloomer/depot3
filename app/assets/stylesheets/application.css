@@ -15,12 +15,20 @@
 body {
     width: 950px;
     margin: auto;
+<<<<<<< HEAD
     background-color: blue;
+=======
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 }
 #cart {
     float: right;
 }
+<<<<<<< HEAD
 #topmenu li {
     display: inline;
     padding-right:10px;
+=======
+#links li {
+    display: inline;
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
 }

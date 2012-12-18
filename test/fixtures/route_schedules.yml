@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  departure_time: 2012-12-13 16:49:24
+  stop_id: MyString
+  integer: MyString
+  outbound: false
+  inbound: false
+  capacity: 1
+
+two:
+  departure_time: 2012-12-13 16:49:24
+  stop_id: MyString
+  integer: MyString
+  outbound: false
+  inbound: false
+  capacity: 1

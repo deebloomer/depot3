@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" compressed="false" hash="2713598546" />
 </project>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" compressed="false" hash="4053689662" />
+</project>
+
+>>>>>>> 3f50ff0523676a66f7e9d282b6aad397067975bd
